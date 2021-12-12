@@ -1,0 +1,30 @@
+{
+  "name": "cs392-workshop02-group3",
+  "version": "1.0.0",
+  "description": "CS392-Workshop2-Group3",
+  "main": "index.js",
+  "scripts": {
+    "test": "coveralls index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YousefKhalid/Workshop-02-CS392-02-171.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YousefKhalid/Workshop-02-CS392-02-171.git/issues"
+  },
+  "homepage": "https://github.com/YousefKhalid/Workshop-02-CS392-02-171.git#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fasttext": "^1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.1",
+    "jest": "^27.4.3",
+    "lint": "^0.7.0"
+  }
+}
