@@ -3,13 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Your front-end</title>
+<style>
+	.center {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 150px;
+	}
+</style>
+<style>
+	.center2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 1px;
+	}
+</style>
 </head>
 
 <body>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
+<form action="/fasttext"> 
+	<div class="center">
+		Enter your text to be classified
+		<br>
+		<input type="text" name="statement">
+		
+	</div>
+	<div class="center2"><input type="submit"value= "Submit"><input type="reset" value= "clear text"></div>
+
 </form> 
 
 </body>
