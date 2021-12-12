@@ -1,4 +1,5 @@
-# Food-Expicted tool
+[![Build Status](https://app.travis-ci.com/YousefKhalid/Workshop-02-CS392-02-171.svg?branch=main)](https://app.travis-ci.com/YousefKhalid/Workshop-02-CS392-02-171)
+# Food-Expected tool
 Web-based machine learning system for simple text classification.
 
 ## How it is work
