@@ -9,7 +9,7 @@ User write food description and press submit, then will display in the server la
 * Node.js
 * npm <br />
 Download [Node installer](https://nodejs.org/en/download/) to install both Node.js and npm on your system. <br /><br />
-After download the requiremnts follow the steps: <br />
+After download the requiremnts follow the steps to install Node.js and npm: <br />
 ```
 1. $ install npm 
 2. $ npm init -y 
@@ -30,3 +30,7 @@ $ node index.js
 * Open the browser then write in URL field **localhost:8000**
 * Finally, the tool is run!
 
+### Contributors:
+1. [Yousef Khalid Alturki](https://github.com/YousefKhalid) <br />
+2. [Ziyad Mohammed Alenazi](https://github.com/ZiyadAlenazi) <br />
+3. [Mohammed Omar Alsharif](https://github.com/ZiyadAlenazi) <br />
