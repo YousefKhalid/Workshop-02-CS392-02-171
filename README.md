@@ -33,4 +33,4 @@ $ node index.js
 ### Contributors:
 1. [Yousef Khalid Alturki](https://github.com/YousefKhalid) <br />
 2. [Ziyad Mohammed Alenazi](https://github.com/ZiyadAlenazi) <br />
-3. [Mohammed Omar Alsharif](https://github.com/ZiyadAlenazi) <br />
+3. [Mohammed Omar Alsharif](https://github.com/MohammedAlsharif1) <br />
