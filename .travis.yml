@@ -1,19 +1,5 @@
-sudo: false 
-
 language: node_js
 
 node_js:
-  - 11.6.0
-catch: npm
-
-script:
-  - npm test
-  - npm run bulid
-
-deply:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  on:
-    branch: main
+  - 7
 
