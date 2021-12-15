@@ -1,17 +1,43 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Your front-end</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Food-Expected tool</title>
+    <!-- <link rel="stylesheet" href="Style.css"  /> -->
+	<link rel="stylesheet" type="text/css" href="css/Style.css" />
 
-<body>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-</form> 
 
-</body>
+  </head>
 
-</html> 
+  <body>
+    <div class="header">
+      <div>
+        <img class="logo1" src="images/csimg.png" alt="CS image" />
+      </div>
+      <div class="website_name">
+        <h1>Food-Expected</h1>
+      </div>
+    </div>
+    <form action="/fasttext">
+      <div class="center">
+        <label for="name">Enter your text to be classified </label><br>
+        <input
+          class="Textbox"
+          type="text"
+          id="name"
+          name="statement"
+          placeholder="Enter your food"
+        />
+      </div>
+      <div class="wrap">
+        <div class="item">
+          <button class="btn">Submit</button>
+        </div>
+        <div class="item">
+          <button input type="reset" class="btn2">Clear text</button>
+        </div>
+      </div>
+    </form>
+
+  </body>
+</html>

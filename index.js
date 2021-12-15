@@ -3,6 +3,7 @@ const app = express();
 const fastText = require("fasttext");
 const cors = require("cors");
 
+
 let config = {
   dim: 100,
   input: "train.txt",
@@ -18,14 +19,27 @@ classifier.train("supervised", config).then((res) => {
 });
 
 app.use(cors());
+app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
+
+
+const result = [];
+
+
+//register for viewengine
+app.set('view engine', 'ejs');
+app.engine('ejs', require('ejs').__express);
+
+
 
 app.get("/", (req, res) => {
-  res.sendfile("index.html");
+  res.render("index",{result});
 });
 
 app.get("/fasttext/", function (req, res) {
   var statement = req.param("statement");
-  res.send(getFastTextResults(statement));
+  getFastTextResults(statement);
+  res.redirect('/');
 });
 
 function getFastTextResults(statement) {
@@ -34,6 +48,10 @@ function getFastTextResults(statement) {
     .predict(statement, 3)
     .then((res) => {
       console.log(res);
+        // const label_value = res[0].value;
+        const label_name = res[0].label.split("__")[2];
+        result.push({value:statement, label:label_name});
+        console.log(result);
     })
     .catch((err) => {
       console.log(err);
